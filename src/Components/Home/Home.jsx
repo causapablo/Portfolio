@@ -12,7 +12,7 @@ const Home = () => {
 
 
     return (
-        <div className='h-screen bg-gray-800 pt-10'>
+        <div className='h-full bg-gray-800 pt-10'>
             <div>
                 <nav>
                     <div className='container mx-auto flex items-center justify-between'>
@@ -55,12 +55,27 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='hidden md:inline'>
-                        <img src={computer} alt="computer" className='h-full' />
+                        <img src={computer} alt="computer" className='' />
                     </div>
 
                 </div>
             </div>
+            <div className='w-1/2 mx-auto md:grid md:grid-cols-2 mt-16'>
+                <div>
+                    <img src={profile} alt="ProfilePicture"  className='rounded-2xl'/>
+                </div>
+                <div className='md:m-16'>
+                    <h1 className='mt-4 text-2xl font-Poppins font-semibold'>Full Stack Web Developer <span>_</span></h1>
+                    <p className='font-Inter mt-3 mb-4 text-lg'>
+                        I work in both sides of development, front and back. I like to give handy solutions to customers by using 
+                        the main technologies in the industry. I'm always learning new stuff in order
+                        to achieve and satisfy the customer's requirements. The aim of technology is to make human's life easier
+                        and more confortable, therefore, I work with that aim too. 
+                    </p>
+                    <a href="http://www.google.com" className='font-Poppins text-blue-400'>Know more →</a>
+                </div>
 
+            </div>
         </div>
     );
 };
