@@ -1,9 +1,12 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Projects from './Components/Projects/Projects'
 function App() {
   return (
    <Routes>
-    <Route path = '/home' element = {<Home/>}/>
+    <Route path = '/' element = {<Home/>}/>
     <Route path = '/about' element = {<About/>}/>
     <Route path = '/projects' element = {<Projects/>}/>
    </Routes>
@@ -12,7 +15,7 @@ function App() {
 }
 
 export default App;
-{/* <body className='bg-gray-100 sm:bg-yellow-300  md:bg-green-600 lg:bg-blue-600 xl:bg-cyan-900'>
+/*  <body className='bg-gray-100 sm:bg-yellow-300  md:bg-green-600 lg:bg-blue-600 xl:bg-cyan-900'>
 <div className='grid lg:grid-cols-2'>
   <div className='px-8 py-10 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 xl:space-y-8 '>
     <img src={logo} alt='logo' className='h-6 sm:h-8 lg:h-14' />
@@ -33,4 +36,4 @@ export default App;
 
 
 
-</body> */}
+</body> */ 
