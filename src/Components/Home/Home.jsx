@@ -2,6 +2,10 @@ import React from 'react';
 import logo from '../../img/logo.png'
 import computer from '../../img/wallpaper-computer-room-desktop.png';
 import profile from '../../img/ProfilePicture.jpg';
+import Food from '../../img/Food.png';
+import Menu from '../../img/Menu.png';
+import PsicoApp from '../../img/PsicoApp.png';
+import Reviews from '../../img/Reviews.png';
 const Home = () => {
 
     const handleOnClick = () => {
@@ -12,7 +16,7 @@ const Home = () => {
 
 
     return (
-        <div className='h-full bg-gray-800 pt-10'>
+        <div className='h-full bg-gray-800 py-10'>
             <div>
                 <nav>
                     <div className='container mx-auto flex items-center justify-between'>
@@ -60,22 +64,40 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='w-1/2 mx-auto md:grid md:grid-cols-2 mt-16'>
+            <div className='w-1/2 mx-auto lg:grid lg:grid-cols-2 mt-16'>
                 <div>
-                    <img src={profile} alt="ProfilePicture"  className='rounded-2xl'/>
+                    <img src={profile} alt="ProfilePicture" className='rounded-2xl' />
                 </div>
-                <div className='md:m-16'>
+                <div className='m-4'>
                     <h1 className='mt-4 text-2xl font-Poppins font-semibold'>Full Stack Web Developer <span>_</span></h1>
                     <p className='font-Inter mt-3 mb-4 text-lg'>
-                        I work in both sides of development, front and back. I like to give handy solutions to customers by using 
+                        I work in both sides of development, front and back. I like to give handy solutions to customers by using
                         the main technologies in the industry. I'm always learning new stuff in order
                         to achieve and satisfy the customer's requirements. The aim of technology is to make human's life easier
-                        and more confortable, therefore, I work with that aim too. 
+                        and more confortable, therefore, I work with that aim too.
                     </p>
                     <a href="http://www.google.com" className='font-Poppins text-blue-400'>Know more →</a>
                 </div>
 
             </div>
+            <div className='container'>
+                <div className='grid md:grid-cols-2 gap-4 my-32'>
+
+                    <div>
+                        <img src={PsicoApp} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500'/>
+                    </div>
+                    <div>
+                        <img src={Food} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500' />
+                    </div>
+                    <div>
+                        <img src={Reviews} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500' />
+                    </div>
+                    <div>
+                        <img src={Menu} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500' />
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
