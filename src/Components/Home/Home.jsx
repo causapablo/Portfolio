@@ -6,6 +6,7 @@ import Food from '../../img/Food.png';
 import Menu from '../../img/Menu.png';
 import PsicoApp from '../../img/PsicoApp.png';
 import Reviews from '../../img/Reviews.png';
+import Footer from '../Footer/Footer';
 const Home = () => {
 
     const handleOnClick = () => {
@@ -16,7 +17,7 @@ const Home = () => {
 
 
     return (
-        <div className='h-full bg-gray-800 py-10'>
+        <div className='h-full bg-gray-800 py-10 text-gray-300'>
             <div>
                 <nav>
                     <div className='container mx-auto flex items-center justify-between'>
@@ -80,12 +81,12 @@ const Home = () => {
                 </div>
 
             </div>
-            <div className='container my-32'>
+            <div className='container mt-32'>
                 <p className='mb-3 font-Poppins'>See some of my work</p>
                 <div className='grid md:grid-cols-2 gap-4'>
 
                     <div>
-                        <img src={PsicoApp} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500'/>
+                        <img src={PsicoApp} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500' />
                     </div>
                     <div>
                         <img src={Food} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500' />
@@ -98,7 +99,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
+            <div className='my-4 container flex'>
+                <a href='http://www.google.com' className='font-Poppins  mx-auto'>Discover all my recent projects →</a>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
