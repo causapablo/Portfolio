@@ -24,7 +24,7 @@ const Nav = () => {
                     <div className='w-6 h-1 bg-black'></div>
                     <div className='w-6 h-1 bg-black'></div>
                 </div>
-                <ul id='menu' className='bg-cyan-800 md:hidden font-extrabold absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center'>
+                <ul id='menu' className='bg-cyan-800 hidden font-extrabold absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center'>
                     <li><a href='http://www.google.com'>Home</a></li>
                     <li><a href='http://www.google.com'>About</a></li>
                     <li><a href='http://www.google.com'>Projects</a></li>
