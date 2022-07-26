@@ -33,9 +33,7 @@ const Home = () => {
                         <div className='space-y-6 mt-12 flex items-center relative'>
                             <img src={profile} alt="profile" className='rounded-full w-12' />
                             <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-1 rounded-full left-8'></div>
-                            <div className=''>
-                            <p className='text-2xl font-Poppins font-bold ml-10 inline-flex'>Availavility: </p> <span className=' text-2xl font-Inter ml-6'>Available for work</span>
-                            </div>
+                            <p className='text-2xl font-Poppins font-bold ml-5 inline-flex'>Availavility: </p> <span className=' text-2xl font-Inter ml-6'>Available for work</span>
                         </div>
                     </div>
                     <div className='hidden md:inline'>
@@ -44,9 +42,9 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='mx-2 md:w-1/2 sm:mx-auto lg:grid lg:grid-cols-2 mt-16'>
-                <div>
-                    <img src={profile} alt="ProfilePicture" className='rounded-2xl' />
+            <div className='md:w-3/5 md:mx-auto lg:grid lg:grid-cols-2 mt-16'>
+                <div className='flex items-center justify-center'>
+                    <img src={profile} alt="ProfilePicture" className='rounded-2xl w-4/5' />
                 </div>
                 <div className='m-4'>
                     <h1 className='mt-4 text-2xl font-Poppins font-semibold'>Full Stack Web Developer <span>_</span></h1>
