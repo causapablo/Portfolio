@@ -30,9 +30,11 @@ const Home = () => {
                             Handy brain, handy man.
                         </p>
                         <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'>Get Started</button>
-                        <div className='space-y-6 mt-12 flex items-center relative'>
+                        <div className='space-y-6 mt-12 flex items-center'>
+                            <div className='relative'>
                             <img src={profile} alt="profile" className='rounded-full w-12' />
-                            <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-1 rounded-full left-8'></div>
+                            <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-0 rounded-full left-9'></div>
+                            </div>
                             <p className='text-2xl font-Poppins font-bold ml-5 inline-flex'>Availavility: </p> <span className=' text-2xl font-Inter ml-6'>Available for work</span>
                         </div>
                     </div>
