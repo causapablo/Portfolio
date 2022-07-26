@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../img/logo.png'
 import computer from '../../img/wallpaper-computer-room-desktop.png';
 import profile from '../../img/ProfilePicture.jpg';
 import Food from '../../img/Food.png';
@@ -7,6 +6,7 @@ import Menu from '../../img/Menu.png';
 import PsicoApp from '../../img/PsicoApp.png';
 import Reviews from '../../img/Reviews.png';
 import Footer from '../Footer/Footer';
+import {SiSequelize} from 'react-icons/si'
 const Home = () => {
 
     const handleOnClick = () => {
@@ -17,30 +17,33 @@ const Home = () => {
 
 
     return (
-        <div className='h-full bg-gray-800 py-10 text-gray-300'>
-            <div>
-                <nav>
-                    <div className='container mx-auto flex items-center justify-between'>
-                        <span className='text-white font-Inter font-extrabold text-2xl tracking-widest inline'>Pablo<span className='font-thin'>Causa</span></span>
-                        <ul className=' hidden md:flex space-x-12 font-bold'>
-                            <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Home</a></li>
-                            <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>About</a></li>
-                            <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Projects</a></li>
-                        </ul>
-                        <img src={logo} className='hidden md:block w-15 cursor-pointer' alt='logo' />
-                        <div className='space-y-1 md:hidden cursor-pointer z-20' onClick={handleOnClick}>
-                            <div className='w-6 h-1 bg-black'></div>
-                            <div className='w-6 h-1 bg-black'></div>
-                            <div className='w-6 h-1 bg-black'></div>
-                        </div>
-                        <ul id='menu' className='bg-cyan-800 md:hidden font-extrabold absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center'>
-                            <li><a href='http://www.google.com'>Home</a></li>
-                            <li><a href='http://www.google.com'>About</a></li>
-                            <li><a href='http://www.google.com'>Projects</a></li>
-                        </ul>
+        <div className='h-full bg-gray-800 py-3 text-gray-300'>
+
+            <nav>
+                <div className='container mx-auto flex items-center justify-between'>
+                    <span className='text-white font-Inter font-extrabold text-2xl tracking-widest inline'>Pablo<span className='font-thin'>Causa</span></span>
+                    <ul className=' hidden md:flex space-x-12 font-bold'>
+                        <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Home</a></li>
+                        <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>About</a></li>
+                        <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Projects</a></li>
+                    </ul>
+                    <div>
+                        <SiSequelize className='hidden md:block w-15 text-4xl cursor-pointer'/>
                     </div>
-                </nav>
-            </div>
+                    
+                    <div className='space-y-1 md:hidden cursor-pointer z-20' onClick={handleOnClick}>
+                        <div className='w-6 h-1 bg-black'></div>
+                        <div className='w-6 h-1 bg-black'></div>
+                        <div className='w-6 h-1 bg-black'></div>
+                    </div>
+                    <ul id='menu' className='bg-cyan-800 md:hidden font-extrabold absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center'>
+                        <li><a href='http://www.google.com'>Home</a></li>
+                        <li><a href='http://www.google.com'>About</a></li>
+                        <li><a href='http://www.google.com'>Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+
             <div className='container mx-auto mt-32'>
                 <div className=' grid md:grid-cols-2'>
                     <div className=''>
@@ -52,7 +55,7 @@ const Home = () => {
                             I always find joy in challenges and solving problems.
                             Handy brain, handy man.
                         </p>
-                        <button className='text-left mt-20 rounded-xl border-4 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'>Get Started</button>
+                        <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'>Get Started</button>
                         <div className='space-y-6 mt-12 flex items-center relative'>
                             <img src={profile} alt="profile" className='rounded-full w-12' />
                             <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-0 rounded-full left-9'></div>
