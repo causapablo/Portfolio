@@ -80,8 +80,9 @@ const Home = () => {
                 </div>
 
             </div>
-            <div className='container'>
-                <div className='grid md:grid-cols-2 gap-4 my-32'>
+            <div className='container my-32'>
+                <p className='mb-3 font-Poppins'>See some of my work</p>
+                <div className='grid md:grid-cols-2 gap-4'>
 
                     <div>
                         <img src={PsicoApp} alt="PsicoApp" className='rounded-xl border-slate-500 border-2 hover:scale-105 duration-500'/>
