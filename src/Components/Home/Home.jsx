@@ -6,44 +6,18 @@ import Menu from '../../img/Menu.png';
 import PsicoApp from '../../img/PsicoApp.png';
 import Reviews from '../../img/Reviews.png';
 import Footer from '../Footer/Footer';
-import {SiSequelize} from 'react-icons/si'
+import Nav from '../Nav/Nav';
+
 const Home = () => {
 
-    const handleOnClick = () => {
 
-        const menu = document.querySelector('#menu');
-        menu.classList.toggle('hidden');
-    }
 
 
     return (
         <div className='h-full bg-gray-800 py-3 text-gray-300'>
 
-            <nav>
-                <div className='container mx-auto flex items-center justify-between'>
-                    <span className='text-white font-Inter font-extrabold text-2xl tracking-widest inline'>Pablo<span className='font-thin'>Causa</span></span>
-                    <ul className=' hidden md:flex space-x-12 font-bold'>
-                        <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Home</a></li>
-                        <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>About</a></li>
-                        <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Projects</a></li>
-                    </ul>
-                    <div>
-                        <SiSequelize className='hidden md:block w-15 text-4xl cursor-pointer'/>
-                    </div>
-                    
-                    <div className='space-y-1 md:hidden cursor-pointer z-20' onClick={handleOnClick}>
-                        <div className='w-6 h-1 bg-black'></div>
-                        <div className='w-6 h-1 bg-black'></div>
-                        <div className='w-6 h-1 bg-black'></div>
-                    </div>
-                    <ul id='menu' className='bg-cyan-800 md:hidden font-extrabold absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center'>
-                        <li><a href='http://www.google.com'>Home</a></li>
-                        <li><a href='http://www.google.com'>About</a></li>
-                        <li><a href='http://www.google.com'>Projects</a></li>
-                    </ul>
-                </div>
-            </nav>
 
+            <Nav />
             <div className='container mx-auto mt-32'>
                 <div className=' grid md:grid-cols-2'>
                     <div className=''>
@@ -58,8 +32,10 @@ const Home = () => {
                         <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'>Get Started</button>
                         <div className='space-y-6 mt-12 flex items-center relative'>
                             <img src={profile} alt="profile" className='rounded-full w-12' />
-                            <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-0 rounded-full left-9'></div>
+                            <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-1 rounded-full left-8'></div>
+                            <div className=''>
                             <p className='text-2xl font-Poppins font-bold ml-10 inline-flex'>Availavility: </p> <span className=' text-2xl font-Inter ml-6'>Available for work</span>
+                            </div>
                         </div>
                     </div>
                     <div className='hidden md:inline'>
@@ -68,7 +44,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='w-1/2 mx-auto lg:grid lg:grid-cols-2 mt-16'>
+            <div className='mx-2 md:w-1/2 sm:mx-auto lg:grid lg:grid-cols-2 mt-16'>
                 <div>
                     <img src={profile} alt="ProfilePicture" className='rounded-2xl' />
                 </div>
