@@ -30,7 +30,7 @@ const Footer = () => {
                     <BsLinkedin className='text-3xl text-slate-600' />
                     <BsGithub className='text-3xl text-slate-600' />
                 </div>
-                <div className='flex justify-center items-center text-slate-600 text-md'>
+                <div className='flex justify-center items-center text-slate-600 text-md mt-3'>
                     <div>
                         <AiOutlineCopyright className='mx-1' />
                     </div>
