@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
             <div className='container mt-32 text-center w-96 space-y-5'>
 
-                <p className='text-3xl font-Poppins font-semibold'>Contact me_</p>
+                <p className='text-3xl font-Poppins font-semibold'>Contact me<span className='animate-pulse'>_</span></p>
                 <p>Hello there! Do you have any interesting idea that you think I can provide value or just want to
                     talk something about technology and science? Just send me and email.
                 </p>
