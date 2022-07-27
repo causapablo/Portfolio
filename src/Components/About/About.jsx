@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import Nav from '../Nav/Nav';
 import { FaReact } from 'react-icons/fa'
-import { SiJava,SiRedux,SiCsharp,SiPhp,SiKotlin, SiNodedotjs, SiExpress, SiJsonwebtokens, SiSocketdotio, SiJavascript, SiMomenteo, SiPostgresql,SiHtml5, SiCss3 } from 'react-icons/si'
+import {SiMongodb, SiJava,SiRedux,SiCsharp,SiPhp,SiKotlin, SiNodedotjs, SiExpress, SiJsonwebtokens, SiSocketdotio, SiJavascript, SiMomenteo, SiPostgresql,SiHtml5, SiCss3 } from 'react-icons/si'
 import ComputerAbout from '../../img/ComputerAbout.jpg'
 const About = () => {
     return (
@@ -86,6 +86,9 @@ const About = () => {
                             </div>
                             <div>
                                 <SiPostgresql className='mx-auto' />
+                            </div>
+                            <div>
+                                <SiMongodb className='mx-auto'/>
                             </div>
 
                         </div>

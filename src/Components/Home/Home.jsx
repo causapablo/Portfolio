@@ -7,7 +7,7 @@ import PsicoApp from '../../img/PsicoApp.png';
 import Reviews from '../../img/Reviews.png';
 import Footer from '../Footer/Footer';
 import Nav from '../Nav/Nav';
-
+import {Link} from 'react-router-dom';
 const Home = () => {
 
 
@@ -29,11 +29,11 @@ const Home = () => {
                             I always find joy in challenges and solving problems.
                             Handy brain, handy man.
                         </p>
-                        <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'>Get Started</button>
+                        <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'><a href="https://drive.google.com/file/d/1ZIY2xUN2PD6E5_JsqJHVPmlPROiziUkF/view?usp=sharing">Get Started</a></button>
                         <div className='space-y-6 mt-12 flex items-center'>
                             <div className='relative'>
-                            <img src={profile} alt="profile" className='rounded-full w-12' />
-                            <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-0 rounded-full left-9'></div>
+                                <img src={profile} alt="profile" className='rounded-full w-12' />
+                                <div className='h-3 w-3 bg-[#7DCE13] absolute bottom-0 rounded-full left-9'></div>
                             </div>
                             <p className='text-2xl font-Poppins font-bold ml-5 inline-flex'>Availavility: </p> <span className=' text-2xl font-Inter ml-6'>Available for work</span>
                         </div>
@@ -56,7 +56,8 @@ const Home = () => {
                         to achieve and satisfy the customer's requirements. The aim of technology is to make human's life easier
                         and more confortable, therefore, I work with that aim too.
                     </p>
-                    <a href="http://www.google.com" className='font-Poppins text-blue-400'>Know more →</a>
+                    <Link to='/about'>Know more →</Link>
+                    
                 </div>
 
             </div>
@@ -79,7 +80,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='my-4 container flex'>
-                <a href='http://www.google.com' className='font-Poppins  mx-auto'>Discover all my recent projects →</a>
+                <Link to='/projects'>Discover all my recent projects →</Link>
             </div>
             <Footer></Footer>
         </div>
