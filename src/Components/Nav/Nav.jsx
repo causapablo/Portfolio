@@ -11,8 +11,8 @@ const Nav = () => {
             <div className='container mx-auto flex items-center justify-between'>
                 <span className='text-white font-Inter font-extrabold text-2xl tracking-widest inline'>Pablo<span className='font-thin'>Causa</span></span>
                 <ul className=' hidden md:flex space-x-12 font-bold'>
-                    <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Home</a></li>
-                    <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>About</a></li>
+                    <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='/'>Home</a></li>
+                    <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='/about'>About</a></li>
                     <li className='text-white font-Inter font-extrabold text-2xl tracking-widest hover:text-gray-500'><a href='http://www.google.com'>Projects</a></li>
                 </ul>
                 <div>

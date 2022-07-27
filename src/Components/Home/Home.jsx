@@ -23,7 +23,7 @@ const Home = () => {
                     <div className=''>
                         <div>
                             <p className='text-white text-center text-5xl font-bold md:text-center md:text-6xl md:font-bold tracking-widest'>Full Stack</p>
-                            <p className='text-white text-center text-5xl font-extrabold md:text-center md:text-6xl md:font-extrabold'>Developer<div className='inline-block h-1 w-6 bg-gray-500'></div></p>
+                            <p className='text-white text-center text-5xl font-extrabold md:text-center md:text-6xl md:font-extrabold'>Developer<div className='inline-block h-1 w-6 bg-gray-500 animate-pulse'></div></p>
                         </div>
                         <p className='mt-14 font-Poppins font-medium md:text-2xl md:mt-16 md:tracking-wider '>Hi, I'm Pablo, a Full Stack developer in love with technology.
                             I always find joy in challenges and solving problems.
