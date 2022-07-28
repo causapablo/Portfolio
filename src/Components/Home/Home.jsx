@@ -29,7 +29,7 @@ const Home = () => {
                             I always find joy in challenges and solving problems.
                             Handy brain, handy man.
                         </p>
-                        <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'><a href="https://drive.google.com/file/d/1ZIY2xUN2PD6E5_JsqJHVPmlPROiziUkF/view?usp=sharing">Get Started</a></button>
+                        <button className='text-left mt-20 rounded-xl border-2 p-2 px-4 hover:bg-slate-400 font-Poppins bg-slate-700'><a href="https://drive.google.com/file/d/1prLaKYPG1yXUlJMz0fiQ_T0QXNdqnPJj/view?usp=sharing" target='_blank' rel="noreferrer">Get Started</a></button>
                         <div className='space-y-6 mt-12 flex items-center'>
                             <div className='relative'>
                                 <img src={profile} alt="profile" className='rounded-full w-12' />
