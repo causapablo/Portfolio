@@ -30,8 +30,8 @@ const Footer = () => {
                     <BsInstagram className='text-3xl text-slate-600' />
                     <a href="https://www.linkedin.com/in/pablocausa/" target='_blank' rel="noreferrer"><BsLinkedin className='text-3xl text-slate-600' /></a>
                     <a href="https://github.com/causapablo" target='_blank' rel="noreferrer"><BsGithub className='text-3xl text-slate-600' /></a>
-                    <a href="https://wa.me/+543518660827" target='_blank' rel="noreferrer"><SiWhatsapp className='text-3xl text-slate-600'/></a>
-                    <a href="https://t.me/+543518660827" target='_blank' rel="noreferrer"><SiTelegram className='text-3xl text-slate-600'/></a>
+                    <a href="https://wa.me/+5493518660827" target='_blank' rel="noreferrer"><SiWhatsapp className='text-3xl text-slate-600'/></a>
+                    <a href="https://t.me/+5493518660827" target='_blank' rel="noreferrer"><SiTelegram className='text-3xl text-slate-600'/></a>
                 </div>
                 <div className='flex justify-center items-center text-slate-600 text-md mt-3'>
                     <div>
